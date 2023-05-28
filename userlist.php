@@ -1,4 +1,4 @@
-<?php require_once 'menu.php'; ?>
+<?php require_once 'home.php'; ?>
 <html lang="en">
 <head>
 <meta charset="utf-8">

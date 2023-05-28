@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="style1.css">
 
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">خانه</a>
+  <a href="index.php" class="active">خانه</a>
  
   <a href="#contact">لیست کاربران</a>
   <a href="#about">خروج</a>
@@ -23,5 +23,4 @@
   </a>
 
 </div>
-
-<h1>آقا  یا خانم .... خوش آمدید</h1>
+<h1>آقا یا خانم خوش آمدید</h1>
