@@ -1,5 +1,12 @@
 
+<?php
+require_once 'inc/functions.php'; checklogin();
 
+
+
+
+
+?>
 
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <!DOCTYPE html>
@@ -26,3 +33,5 @@
   </a>
 
 </div>
+
+<h1>آقا یا خانم .... خوش آمدید</h1>

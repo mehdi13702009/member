@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html> 
 <html> 
 <head>
@@ -46,13 +48,13 @@ button {
 </head>  
 <body>  
     <center> <h1> Student Login Form </h1> </center> 
-    <form>
+    <form action="inc/functions.php" method="post">
         <div class="container"> 
             <label>Username : </label> 
             <input type="text" placeholder="Enter Username" name="username" required>
             <label>Password : </label> 
             <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button> 
+            <button type="submit" name="do-login">Login</button> 
             <input type="checkbox" checked="checked"> Remember me 
             <button type="button" class="cancelbtn"> Cancel</button> 
             Forgot <a href="#"> password? </a> 

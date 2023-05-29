@@ -1,4 +1,4 @@
-<?php require_once 'home.php'; ?>
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -7,6 +7,7 @@
 <title>User list page - Bootdey.com</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
 <style type="text/css">
     	body{margin-top:20px;}
 
@@ -185,6 +186,17 @@
     </style>
 </head>
 <body>
+<div class="topnav" id="myTopnav">
+  <a href="index.php" class="active">خانه</a>
+ 
+  <a href="userlist.php">لیست کاربران</a>
+  <a href="#about">خروج</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+</div>
+
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <div class="container">
 <div class="row">

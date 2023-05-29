@@ -1,7 +1,5 @@
 <?php
-if(isset($_POST['submit'])){
-    header("Location: login.php");
-}
+
 
 ?>
 <Html>
@@ -13,14 +11,16 @@ Registration Page
 <body bgcolor="Lightskyblue">
 <br>
 <br>
-<form method="post">
+<form method="post" action="inc/functions.php">
 
 <label> Fullname</label>       
 <input type="text" name="fullname" size="15"/> <br> <br>
 <label> username: </label>   
 <input type="text" name="username" size="15"/> <br> <br>
+<label> email: </label>   
+<input type="email" name="email" size="15"/> <br> <br>
 <label> Password: </label>       
 <input type="text" name="password" size="15"/> <br> <br>
 
-<input type="submit" name="submit" value="register">
+<input type="submit" name="do-register" value="register">
 
