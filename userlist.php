@@ -1,4 +1,7 @@
+<?php
 
+require_once 'inc/functions.php';
+?>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -208,7 +211,7 @@
 <tr>
 <th><span>کاربران</span></th>
 <th><span>تاریخ عضویت</span></th>
-<th class="text-center"><span>وضعیت</span></th>
+
 <th><span>ایمیل</span></th>
 <th>&nbsp;</th>
 </tr>
@@ -216,18 +219,32 @@
 <tbody>
 <tr>
 <td>
-<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt>
-<a href="#" class="user-link">Mila Kunis</a>
-<span class="user-subhead">ادمین</span>
+<?php $lists=getUserlist();
+foreach($lists as $list){
+
+
+
+?>
+<a href="#" class="user-link"><?php echo $list['Fullname']; ?> </a>
+<?php } ?>
+
 </td>
 <td>
 2013/08/08
 </td>
 <td class="text-center">
-<span class="label label-default">غیرفعال</span>
+
 </td>
 <td>
-<a href="#"><span class="__cf_email__" data-cfemail="89e4e0e5e8c9e2fce7e0faa7eae6e4">[email&#160;protected]</span></a>
+	
+<?php $lists=getUserlist();
+foreach($lists as $list){
+
+
+
+?>
+<a href="#"><span class="__cf_email__" data-cfemail="89e4e0e5e8c9e2fce7e0faa7eae6e4"><?php echo $list['email'];?></br> </span></a>
+<?php } ?>
 </td>
 <td style="width: 20%;">
 <a href="#" class="table-link">
@@ -251,331 +268,11 @@
 </td>
 </tr>
 <tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt>
-<a href="#" class="user-link">George Clooney</a>
-<span class="user-subhead">کاربر</span>
-</td>
-<td>
-2013/08/12
-</td>
-<td class="text-center">
-<span class="label label-success">فعال</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="3954584b555657795b4b58575d56175a5654">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt>
-<a href="#" class="user-link">Ryan Gossling</a>
-<span class="user-subhead">عضو</span>
-</td>
-<td>
-2013/03/03
-</td>
-<td class="text-center">
-<span class="label label-danger">محدود شده</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="563c37353d16383f353e393a253938">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt>
-<a href="#" class="user-link">Emma Watson</a>
-<span class="user-subhead">کاربر</span>
-</td>
-<td>
-2004/01/24
-</td>
-<td class="text-center">
-<span class="label label-warning">Pending</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="ea829f879a82988f93aa88858d8b989ec4898587">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt>
-<a href="#" class="user-link">Robert Downey Jr.</a>
-<span class="user-subhead">ادمین</span>
-</td>
-<td>
-2013/12/31
-</td>
-<td class="text-center">
-<span class="label label-success">فعال</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="9cefecf9f2fff9eedce8eefdffe5">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt>
-<a href="#" class="user-link">Mila Kunis</a>
-<span class="user-subhead">ادمین</span>
-</td>
-<td>
-2013/08/08
-</td>
-<td class="text-center">
-<span class="label label-default">غیرفعال</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="701d191c11301b051e19035e131f1d">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt>
-<a href="#" class="user-link">George Clooney</a>
-<span class="user-subhead">کاربر</span>
-</td>
-<td>
-2013/08/12
-</td>
-<td class="text-center">
-<span class="label label-success">فعال</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="89e4e8fbe5e6e7c9ebfbe8e7ede6a7eae6e4">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt>
-<a href="#" class="user-link">Ryan Gossling</a>
-<span class="user-subhead">کاربر</span>
-</td>
-<td>
-2013/03/03
-</td>
-<td class="text-center">
-<span class="label label-danger">محدود شده</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="f19b90929ab19f9892999e9d829e9f">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt>
-<a href="#" class="user-link">Emma Watson</a>
-<span class="user-subhead">کاربر</span>
-</td>
-<td>
-2004/01/24
-</td>
-<td class="text-center">
-<span class="label label-warning">Pending</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="355d4058455d47504c75575a525447411b565a58">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt>
-<a href="#" class="user-link">Robert Downey Jr.</a>
-<span class="user-subhead">ادمین</span>
-</td>
-<td>
-2013/12/31
-</td>
-<td class="text-center">
-<span class="label label-success">فعال</span>
-</td>
-<td>
-<a href="#"><span class="__cf_email__" data-cfemail="e19291848f828493a19593808298">[email&#160;protected]</span></a>
-</td>
-<td style="width: 20%;">
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-<a href="#" class="table-link danger">
-<span class="fa-stack">
-<i class="fa fa-square fa-stack-2x"></i>
-<i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</td>
-</tr>
-</tbody>
-</table>
+
+
+
+
+
 </div>
 <ul class="pagination pull-right">
 <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>

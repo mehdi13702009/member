@@ -33,3 +33,13 @@ if(isset($_POST['do-register'])){
 if(!isset($_SESSION['loggedin'])){
   header("location: login.php");
 }}
+
+function getUserlist(){
+  global $db;
+  $getlist=mysqli_query($db,"SELECT * FROM userlist");
+  $userList=[];
+  while($list=mysqli_fetch_array($getlist)){
+    $userList[]=$list;
+  }
+    return $userList;
+}
