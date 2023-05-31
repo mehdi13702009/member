@@ -230,8 +230,14 @@ foreach($lists as $list){
 
 </td>
 <td>
-2013/08/08
-</td>
+<?php $lists=getUserlist();
+foreach($lists as $list){
+
+
+
+?>
+<a href="#" class="user-link"><?php echo $list['created_at']; ?> </a>
+<?php } ?></td>
 <td class="text-center">
 
 </td>
